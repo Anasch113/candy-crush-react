@@ -1,0 +1,28 @@
+.score-board{
+    
+    
+    font-family: 'Dancing Script', cursive;
+
+    margin-left: 30px;
+    margin-top: -300px;
+    
+    
+}
+.score-board h2{
+    font-size: 30px;
+   font-weight: bold;
+}
+@media(max-width:420px){
+    .score-board{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:750px){
+    .score-board{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+}

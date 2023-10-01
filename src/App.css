@@ -1,0 +1,74 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+body{
+  background-image: url("./assets/candycrush.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container{
+  
+  height: 800px;
+  display:flex ;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.game-board{
+
+ height: 600px;
+ border-radius: 20px;
+ width: 600px;
+ background-color: #ffffff10;
+ backdrop-filter: blur(15px);
+ display: flex;
+ align-items: center;
+justify-content: center;
+ flex-wrap: wrap;
+}
+.game-board img{
+  width: 70px;
+  text-align: center;
+  height: 70px;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%,100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-5px);
+  }
+}
+
+
+@media(max-width:420px){
+  .container{
+    height: 800px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .game-board{
+    width: 266px;
+    height: 370px;
+   
+  }
+.game-board img{
+  width:30px;
+  height: 30px;
+}
+}
+@media(max-width:780px){
+
+ .container{
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+ }
+  
+}

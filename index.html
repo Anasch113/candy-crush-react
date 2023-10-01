@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/cc.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Candy Crush</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+    <audio id="theme-audio" src="./src//assets//theme.mp3" autoplay></audio>
+
+    <script>
+      const themeAudio = document.getElementById("theme-audio");
+
+themeAudio.addEventListener("ended", function () {
+  this.currentTime = 0; // Reset the audio to the beginning
+  this.play(); // Play the audio again when it ends
+});
+
+// Start playing the theme music when the component mounts or the page loads
+themeAudio.play();
+window.addEventListener("load", function () {
+  themeAudio.muted = false;
+});
+
+    </script>
+  </body>
+</html>
